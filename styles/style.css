@@ -1,46 +1,58 @@
-header {
-    text-align: center;
-}
-#title {
-    font-family: "Shadows Into Light", cursive;
-    text-align: center;
-}
 #made-by {
+    font-family: "Shadows Into Light", cursive;
+    padding-right: 37px;
+    margin-block: auto;
+}
+.container-fluid {
+    margin-bottom: 15px;
+}
+.card {
+    margin-top: 100px;
+    width: fit-content;
+    background-color: #00E7BF;
+}
+.col-md-8 {
+    background-color: #00E7BF;
+}
+.icons {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.card-title {
     font-family: "Shadows Into Light", cursive;
 }
 h2 {
     font-family: "Shadows Into Light", cursive;
 }
-.col-sm-8 img {
-    width: 600px;
-}
-.col-sm-8 {
-    background-color: bisque;
+#cheese {
+    font-family: "Shadows Into Light", cursive;
+    text-align: center;
 }
 .col-sm-4 {
-    background-color: #E7EFFF;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     color: #0082EA;
+    text-align: center;
+    margin-block: auto;
 }
 .col-sm-4 div {
     font-size: x-large;
 }
-footer {
-    background-color: aquamarine;
-    margin-top: 30px;
-}
-img {
-    width: 200
-    px;
-}
 .col div p {
     background-color: gainsboro;
 }
-.col img {
-    width: 200px;
+.col .health-type, .health-data {
+    padding: 1.5rem;
 }
-.h2 {
-    background-color: #0082EA;
+footer {
+    background-color: blanchedalmond;
 }
+.footer-section {
+    text-align: center;
+}
+
+
+
 

@@ -13,6 +13,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <script src="https://kit.fontawesome.com/3888d8353b.js" crossorigin="anonymous"></script>
+
     <title>Receptsida | Linda Forslund</title>
     <!--Vald persona : Barnet Blenda -->
     <!--Made by Linda Forslund-->
@@ -24,41 +25,72 @@
         Tänk på din valda persona och hur det påverkar din sida-->
 </head>
 
-<script>
-    function Test() {
-        alert("MUFFIN!")
-    }
-</script>
-<!-- 
-<div class="searchbar">
-    <input type="text" placeholder="Sök maträtt..">
-    <input type="button" value="CLICK" onclick="Test()" />
-</div> -->
-
 <body>
-    <header>
-        <h1>Inlämningsuppgift B</h1>
-        <p id="made-by">Made by Linda Forslund</p>
-    </header>
+    <nav>
+        <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><i class="fa-solid fa-bowl-food"></i> Matkoma</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" aria-current="page">
+                                <i class="fa-solid fa-house-chimney"></i> Hem
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-solid fa-user"></i> Logga in</a>
+                        </li>
+                    </ul>
+                    <p id="made-by">Made by Linda Forslund</p>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Sök maträtt.."
+                            aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Sök</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </nav>
 
     <main>
         <section>
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col-sm-8">
-                        <h2 id="title">Spaghetti med köttfärssås</h2>
-                        <img  src="images/spaghetti.jpg" class="col-md-6 float-md-end mb-3 ms-md-3" alt="">
-                    </div>
-                    <div class="col-sm-4">
-                        <div><i class="fa-solid fa-book-open"></i>
-                            <p>Lätt</p>
+            <div class="container">
+                <div class="card mb-3" style="border-style: none;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="images/food.jpg" class="img-fluid rounded-start" alt="...">
                         </div>
-                        <div>
-                            <i class="fa-solid fa-drumstick-bite"></i>
-                            <p>7 ingredienser</p>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h1 class="card-title">Spaghetti med köttfärssås</h1>
+                                <p class="card-text">Tareq Taylors favoritmat - spaghetti med köttfärssås,
+                                    denna klassiska maträtt älskas av alla, barn som vuxna!
+                                    <br>
+                                    Klassiska maträtten där man experimentera med nya smaker, servera gärna med riven
+                                    parmesanost till!
+                                </p>
+                                <div class="icons">
+                                    <div><i class="fa-solid fa-book-open"></i>
+                                        <p>Lätt</p>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-drumstick-bite"></i>
+                                        <p>7 ingredienser</p>
+                                    </div>
+                                    <div><i class="fa-regular fa-clock"></i>
+                                        <p>40 minuter</p>
+                                    </div>
+                                </div>
+                                <h2 id="cheese">"Kasta aldrig ost igen" - Tareq Taylor</h2>
+                            </div>
                         </div>
-                        <div><i class="fa-regular fa-clock"></i>
-                            <p>40 minuter</p>
+                        <div class="col-sm-8">
+                         
                         </div>
                     </div>
                 </div>
@@ -81,10 +113,10 @@
                         </div>
                     </div>
                     <div class="col">
-                        <h2>Näringsinnehåll</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, aut non animi eaque iure, quia aliquid impedit voluptatem, consequuntur ipsam reprehenderit eius deserunt in aperiam architecto tempora soluta blanditiis quo.</p>
-                        <div>
-                          
+                        <h2>Näringsvärde per portion</h2>
+                        <span class="health-type">Energi</span>
+                        <span class="health-data">2903 KJ / 634 kCal</span>
+
                     </div>
                 </div>
             </div>
@@ -102,70 +134,106 @@
                         <p>Servera köttfärssåsen med spaghettin. Gärna med en sallad till.</p>
                     </div>
                     <div class="col">
-                        <img src="images/onionpan.jpg" alt="">
+                        <!-- <img src="images/onionpan.jpg" alt="">
                         <figcaption>Steg 1</figcaption>
                         <img src="images/onionpan.jpg" alt="">
                         <figcaption>Steg 1</figcaption>
                         <img src="images/onionpan.jpg" alt="">
                         <figcaption>Steg 1</figcaption>
                         <img src="images/onionpan.jpg" alt="">
-                        <figcaption>Steg 1</figcaption>
+                        <figcaption>Steg 1</figcaption> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2>Visste du att..</h2>
+                        <p></p>
+    
                     </div>
                     <div class="col">
                         <div class="embed-responsive embed-responsive-1by1">
-                            <iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/OKKHmjmSTH4?si=eB8MBr1y91HdSSiX" title="YouTube video player" allowfullscreen></iframe>
+                            <iframe width="450" height="260" class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/OKKHmjmSTH4?si=eB8MBr1y91HdSSiX"
+                                title="YouTube video player" allowfullscreen></iframe>
                         </div>
+    
                     </div>
                 </div>
             </div>
         </section>
-        <section>
-         
-            
-        </section>
 
-
-        <footer>
-            <div>
-                <h2>Kontakt info</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aliquam maxime eligendi? Quos,
-                    asperiores fuga! <br>
-                    Nemo dolores voluptate accusamus adipisci vel iste officiis mollitia. Eaque earum placeat odio
-                    ratione rerum!</p>
-            </div>
-        </footer>
-
-      
+        <div class="footer-section">
+            <footer class="row row-cols-1 row-cols-sm2 row-cols-md-5 py-5 my-5 border-top">
+                <div class="col mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">Home 1</li>
+                        <li class="nav-item mb-2">Home 2</li>
+                        <li class="nav-item mb-2">Home 3</li>
+                        <li class="nav-item mb-2">Home 4</li>
+                    </ul>
+                </div>
+                <div class="col mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">Home 1</li>
+                        <li class="nav-item mb-2">Home 2</li>
+                        <li class="nav-item mb-2">Home 3</li>
+                        <li class="nav-item mb-2">Home 4</li>
+                    </ul>
+                </div>
+                <div class="col mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">Home 1</li>
+                        <li class="nav-item mb-2">Home 2</li>
+                        <li class="nav-item mb-2">Home 3</li>
+                        <li class="nav-item mb-2">Home 4</li>
+                    </ul>
+                </div>
+                <div class="col mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">Home 1</li>
+                        <li class="nav-item mb-2">Home 2</li>
+                        <li class="nav-item mb-2">Home 3</li>
+                        <li class="nav-item mb-2">Home 4</li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
     </main>
 </body>
+
 </html>
 
+
 <!-- <section>
-    <div class="test">
-        <div class="food">
-            <img src="images/spaghetti.jpg" alt="Pastarätten spaghetti med köttfärssås">
-            <section>
-                <h2 id="title">Spaghetti med köttfärssås</h2>
-                <div class="flex-box">
-                    <div><i class="fa-solid fa-book-open"></i>
-                        <p>Lätt</p>
-                    </div>
+            <div class="container">
+                <div class="row">
+                    <div class="start">
+                        <div class="col-sm-8">
+                            <img src="images/food.jpg" class="rounded img-fluid" alt="">
+                        </div>
+                        <div class="col-sm-4">
+                            <div><i class="fa-solid fa-book-open"></i>
+                                <p>Lätt</p>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-drumstick-bite"></i>
+                                <p>7 ingredienser</p>
+                            </div>
+                            <div><i class="fa-regular fa-clock"></i>
+                                <p>40 minuter</p>
+                            </div>
+                        </div>
 
-                    <div>
-                        <i class="fa-solid fa-drumstick-bite"></i>
-                        <p>7 ingredienser</p>
-                    </div>
-
-                    <div><i class="fa-regular fa-clock"></i>
-                        <p>40 minuter</p>
                     </div>
                 </div>
-            </section>
-        </div>
-        <div class="searchbar">
-            <input type="text" placeholder="Sök maträtt..">
-            <input type="button" value="CLICK" onclick="Test()" />
-        </div>
-    </div>
-</section> -->
-
+            </div>
+        </section> -->
