@@ -3,16 +3,38 @@
     padding-right: 37px;
     margin-block: auto;
 }
+.navbar {
+    background-color:#BFA6A1;
+}
+.container-fluid .nav-item {
+    font-size: x-large;
+    padding-left: 12px;
+}
+.navbar .nav-item a:hover {
+    color: #3C9948;
+}
+.navbar .nav-item a:hover {
+    transform: scale(1.4);
+}
 .container-fluid {
     margin-bottom: 15px;
+}
+#card-info .col-md-8 {
+    background-color: #D8F9DA;
+}
+.card-cooking-steps img {
+    width: 300px;
+    height: 200px;
 }
 .card {
     margin-top: 100px;
     width: fit-content;
-    background-color: #00E7BF;
 }
-.col-md-8 {
-    background-color: #00E7BF;
+.card-title {
+    font-family: "Shadows Into Light", cursive;
+}
+#cooking-step {
+    padding-top: 15px;
 }
 .icons {
     display: flex;
@@ -20,38 +42,67 @@
     text-align: center;
     font-size: 1.5rem;
 }
-.card-title {
-    font-family: "Shadows Into Light", cursive;
-}
-h2 {
-    font-family: "Shadows Into Light", cursive;
-}
-#cheese {
+#citat {
     font-family: "Shadows Into Light", cursive;
     text-align: center;
 }
-.col-sm-4 {
-    display: flex;
-    justify-content: space-evenly;
-    color: #0082EA;
-    text-align: center;
-    margin-block: auto;
+#health-info .container {
+    background-color: #D8F9DA;
+    border-radius: 20px;
 }
-.col-sm-4 div {
-    font-size: x-large;
+#health-info ul li {
+    background-color: #D8F9DA;
+    border-style: outset;
+    width: 75%;
 }
-.col div p {
-    background-color: gainsboro;
+.dropdown {
+    padding: 10px;
+}  
+h2, h3 {
+    font-family: "Shadows Into Light", cursive;
 }
-.col .health-type, .health-data {
-    padding: 1.5rem;
+.container {
+    padding-bottom: 25px;
+}
+/* .container {
+    background-color: #D8F9DA;
+} */
+#fun-fact .container {
+    background-color: #D8F9DA;
+    border-radius: 20px;
+}
+#fun-fact {
+    padding-top: 30px;
 }
 footer {
-    background-color: blanchedalmond;
+    background-color: #BFA6A1;
+}
+.footer-icons {
+    display: flex;
+    justify-content: space-evenly;
 }
 .footer-section {
     text-align: center;
+    margin-top: 20px;
 }
+.col .footer-icons {
+    font-size: x-large;
+}
+.col .footer-icons li a:hover {
+    background-color: black;
+}  
+.footer-icons a:hover {
+    color: #3C9948;
+}
+.footer-icons .nav-item {
+    transition: transform 0.3s ease;
+}
+.footer-icons .nav-item:hover {
+    transform: scale(1.5);
+}
+
+
+
 
 
 

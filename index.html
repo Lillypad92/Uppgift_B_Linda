@@ -17,39 +17,24 @@
     <title>Receptsida | Linda Forslund</title>
     <!--Vald persona : Barnet Blenda -->
     <!--Made by Linda Forslund-->
-
-    <!--G nivå : Välj typ av enhet - desktop eller mobil och utveckla sidan för den storleken på skärmen
-        Använd grundläggande HTML och CSS
-        Välj korrekta taggar för ditt innehåll
-        Indentera så att du gör din HTML och CSS lätta att läsa
-        Tänk på din valda persona och hur det påverkar din sida-->
+    <!--VG delen: En rolig fakta ruta (Visste du att) och en dropdown för antal personer samt Bootstrap för responsiv sida.-->
 </head>
 
 <body>
     <nav>
-        <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><i class="fa-solid fa-bowl-food"></i> Matkoma</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#" aria-current="page">
-                                <i class="fa-solid fa-house-chimney"></i> Hem
+                            <a class="nav-link active" href="index.html" aria-current="page">
+                                <i class="fa-solid fa-bowl-food"></i> Matkoma
                             </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa-solid fa-user"></i> Logga in</a>
                         </li>
                     </ul>
                     <p id="made-by">Made by Linda Forslund</p>
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Sök maträtt.."
-                            aria-label="Search">
+                        <input class="form-control me-2" type="search" placeholder="Sök maträtt.." aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Sök</button>
                     </form>
                 </div>
@@ -58,7 +43,7 @@
     </nav>
 
     <main>
-        <section>
+        <section id="card-info">
             <div class="container">
                 <div class="card mb-3" style="border-style: none;">
                     <div class="row g-0">
@@ -86,154 +71,189 @@
                                         <p>40 minuter</p>
                                     </div>
                                 </div>
-                                <h2 id="cheese">"Kasta aldrig ost igen" - Tareq Taylor</h2>
+                                <h2 id="citat">"Kasta aldrig ost igen" - Tareq Taylor</h2>
                             </div>
-                        </div>
-                        <div class="col-sm-8">
-                         
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section>
+        <section id="health-info">
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <h2>Ingredienser</h2>
-                        <div>
-                            <p>500 g nötfärs</p>
-                            <p>Spaghetti</p>
-                            <p>1 gul lök</p>
-                            <p>Salt</p>
-                            <p>Peppar</p>
-                            <p>Tomatpuré</p>
-                            <p>500 g krossade tomater (burk)</p>
+                        <div style="display: flex;">
+                            <h2>Ingredienser</h2>
+                            <div class="dropdown">
+                                <select name="portion" id="portion">
+                                    <div class="dropdown-choice">
+                                        <option value="">Antal personer</option>
+                                        <option value="1">1 person</option>
+                                        <option value="2" selected>2 personer</option>
+                                        <option value="4">3 personer</option>
+                                        <option value="5">5 personer</option>
+                                        <option value="6">6 personer</option>
+                                        <option value="7">7 personer</option>
+                                        <option value="8">8 personer</option>
+                                        <option value="9">9 personer</option>
+                                        <option value="10">10 personer</option>
+                                    </div>
+                                </select>
+                            </div>
                         </div>
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Nötfärs 500 g</li>
+                            <li class="list-group-item">Spaghetti</li>
+                            <li class="list-group-item">Gul lök 1 st</li>
+                            <li class="list-group-item">Salt och peppar</li>
+                            <li class="list-group-item">Tomatpuré</li>
+                            <li class="list-group-item">Krossade tomater 500 g</li>
+                        </ul>
                     </div>
                     <div class="col">
                         <h2>Näringsvärde per portion</h2>
-                        <span class="health-type">Energi</span>
-                        <span class="health-data">2903 KJ / 634 kCal</span>
-
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Energi - 2903 KJ / 634 kCal</li>
+                            <li class="list-group-item">Fett 27 g</li>
+                            <li class="list-group-item">Kolhydrat 64 g</li>
+                            <li class="list-group-item">Salt 1.7 g</li>
+                            <li class="list-group-item">Protein 45 g</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section>
+        <section id="cooking-step">
             <div class="container">
+                <h2>Gör så här</h2>
                 <div class="row">
-                    <div class="col">
-                        <h2>Gör så här</h2>
-                        <p>1. Skala och hacka löken i mindre bitar. Stek löken i en panna med olja.</p>
-                        <p>2. Lägg i köttfärsen och stek tills den får färg. Salta och peppra</p>
-                        <p>3. Tillsätt en burk med krossade tomater, låt köttfärssåsen koka upp.</p>
-                        <p>4. Koka spaghettin enligt anvisningen på förpackningen.</p>
-                        <p>Servera köttfärssåsen med spaghettin. Gärna med en sallad till.</p>
+                    <div class="col-6 col-sm-3">
+                        <div class="card-cooking-steps">
+                            <img src="images/onion-pan2.jpg" class="img-thumbnail" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title-steps">Steg ett</h3>
+                                <p class="card-text">Skala och hacka löken i mindre bitar. <br>
+                                    Stek löken i en panna med olja tills löken får färg.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col">
-                        <!-- <img src="images/onionpan.jpg" alt="">
-                        <figcaption>Steg 1</figcaption>
-                        <img src="images/onionpan.jpg" alt="">
-                        <figcaption>Steg 1</figcaption>
-                        <img src="images/onionpan.jpg" alt="">
-                        <figcaption>Steg 1</figcaption>
-                        <img src="images/onionpan.jpg" alt="">
-                        <figcaption>Steg 1</figcaption> -->
+                    <div class="col-6 col-sm-3">
+                        <div class="card-cooking-steps">
+                            <img src="images/meat-in-pan2.jpg" class="img-thumbnail" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title-steps">Steg två</h3>
+                                <p class="card-text">Lägg i köttfärsen och stek tills den får färg. Salta och peppra.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3">
+                        <div class="card-cooking-steps">
+                            <img src="images/sauce.PNG" class="img-thumbnail" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title-steps">Steg tre</h3>
+                                <p class="card-text">Tillsätt en burk med krossade tomater, låt köttfärssåsen koka upp.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-sm-3">
+                        <div class="card-cooking-steps">
+                            <img src="images/boiling-pasta.PNG" class="img-thumbnail" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title-steps">Steg fyra</h3>
+                                <p class="card-text">Koka spaghettin cirka 8 minuter.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3">
+                        <div class="card-cooking-steps">
+                            <img src="images/durkslag.jpg" class="img-thumbnail" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title-steps">Steg fem</h3>
+                                <p class="card-text">Häll spaghettin i ett durkslag.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3">
+                        <div class="card-cooking-steps">
+                            <img src="images/meal-done.jpg" class="img-thumbnail" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title-steps">Steg sex</h3>
+                                <p class="card-text">Maten är klar för servering, smaklig spis!</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <section>
+        <section id="fun-fact">
             <div class="container">
                 <div class="row">
                     <div class="col">
                         <h2>Visste du att..</h2>
-                        <p></p>
-    
+                        <p>Ordet pasta härstammar ifrån grekiskans kornmjölsgröt. På italienska betyder det deg!</p>
+                        <p>Man vet inte helt säkert vart pastan härstammar från början.</p>
+                        <p>Tomatsåsen började man äta tillsammans med pasta först på 1500-talet.</p>
                     </div>
                     <div class="col">
+                        <h3>Tareq Taylor - spaghetti med köttfärssås</h3>
                         <div class="embed-responsive embed-responsive-1by1">
-                            <iframe width="450" height="260" class="embed-responsive-item"
+                            <iframe width="450" height="200" class="embed-responsive-item"
                                 src="https://www.youtube.com/embed/OKKHmjmSTH4?si=eB8MBr1y91HdSSiX"
                                 title="YouTube video player" allowfullscreen></iframe>
                         </div>
-    
                     </div>
                 </div>
             </div>
         </section>
-
-        <div class="footer-section">
-            <footer class="row row-cols-1 row-cols-sm2 row-cols-md-5 py-5 my-5 border-top">
-                <div class="col mb-3">
-                    <h5>Section</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2">Home 1</li>
-                        <li class="nav-item mb-2">Home 2</li>
-                        <li class="nav-item mb-2">Home 3</li>
-                        <li class="nav-item mb-2">Home 4</li>
-                    </ul>
-                </div>
-                <div class="col mb-3">
-                    <h5>Section</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2">Home 1</li>
-                        <li class="nav-item mb-2">Home 2</li>
-                        <li class="nav-item mb-2">Home 3</li>
-                        <li class="nav-item mb-2">Home 4</li>
-                    </ul>
-                </div>
-                <div class="col mb-3">
-                    <h5>Section</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2">Home 1</li>
-                        <li class="nav-item mb-2">Home 2</li>
-                        <li class="nav-item mb-2">Home 3</li>
-                        <li class="nav-item mb-2">Home 4</li>
-                    </ul>
-                </div>
-                <div class="col mb-3">
-                    <h5>Section</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2">Home 1</li>
-                        <li class="nav-item mb-2">Home 2</li>
-                        <li class="nav-item mb-2">Home 3</li>
-                        <li class="nav-item mb-2">Home 4</li>
-                    </ul>
-                </div>
-            </footer>
-        </div>
+        <section>
+            <div class="footer-section">
+                <footer class="row row-cols-1 row-cols-sm2 row-cols-md-5 border-top">
+                    <div class="col mb-3">
+                        <h5>Matkoma</h5>
+                        <ul class="nav flex-column">
+                            <a href="#">
+                                <li class="nav-item mb-2">Om oss</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="col mb-3">
+                        <h5>Kundservice</h5>
+                        <ul class="nav flex-column">
+                            <a href=""><li class="nav-item mb-2">Kontakta oss</li></a>
+                        </ul>
+                    </div>
+                    <div class="col mb-3">
+                        <h5>Samarbete</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2">Tareq Taylor och Linda Forslund</li>
+                        </ul>
+                    </div>
+                    <div class="col mb-3">
+                        <h5>Sociala medier</h5>
+                        <ul class="nav flex-column">
+                            <div class="footer-icons">
+                                <a href="#" target="_blank">
+                                    <li class="nav-item mb-2"><i class="fa-brands fa-facebook"></i></li>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <li class="nav-item mb-2"><i class="fa-brands fa-instagram"></i></li>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <li class="nav-item mb-2"><i class="fa-brands fa-linkedin-in"></i></li>
+                                </a>
+                            </div>
+                        </ul>
+                    </div>
+                </footer>
+            </div>
+        </section>
     </main>
 </body>
-
 </html>
-
-
-<!-- <section>
-            <div class="container">
-                <div class="row">
-                    <div class="start">
-                        <div class="col-sm-8">
-                            <img src="images/food.jpg" class="rounded img-fluid" alt="">
-                        </div>
-                        <div class="col-sm-4">
-                            <div><i class="fa-solid fa-book-open"></i>
-                                <p>Lätt</p>
-                            </div>
-                            <div>
-                                <i class="fa-solid fa-drumstick-bite"></i>
-                                <p>7 ingredienser</p>
-                            </div>
-                            <div><i class="fa-regular fa-clock"></i>
-                                <p>40 minuter</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section> -->
